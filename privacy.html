@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>隐私政策 · 耳边 / Privacy Policy · Earbian</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1f1f2e;
+  background: #faf7f2;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
+header { margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee0d3; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.brand { font-size: 20px; font-weight: 700; color: #4a2c82; letter-spacing: 0.5px; }
+.lang-toggle { display: flex; gap: 4px; background: #ede4d8; border-radius: 999px; padding: 4px; }
+.lang-toggle label { padding: 6px 14px; font-size: 13px; cursor: pointer; border-radius: 999px; transition: all 0.2s; color: #6b5e4b; }
+input[type=radio] { position: absolute; opacity: 0; pointer-events: none; }
+#lang-zh:checked ~ .container .lang-toggle label[for=lang-zh],
+#lang-en:checked ~ .container .lang-toggle label[for=lang-en] { background: #fff; color: #4a2c82; box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-weight: 600; }
+.eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; color: #4a2c82; background: #ede0fa; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 12px; }
+h2 { font-size: 28px; font-weight: 700; color: #2a1845; margin-bottom: 12px; line-height: 1.3; }
+h3 { font-size: 17px; font-weight: 700; color: #2a1845; margin-top: 28px; margin-bottom: 10px; }
+.summary { font-size: 15px; color: #5e5571; margin-bottom: 24px; padding: 16px; background: #fff; border-left: 3px solid #4a2c82; border-radius: 4px; }
+p { margin-bottom: 12px; color: #3a3548; }
+ul { margin-bottom: 16px; padding-left: 24px; }
+li { margin-bottom: 6px; color: #3a3548; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee0d3; font-size: 13px; color: #8a8295; }
+footer a { color: #4a2c82; text-decoration: none; margin-right: 16px; }
+footer a:hover { text-decoration: underline; }
+.meta { margin-bottom: 16px; font-size: 13px; }
+/* 双语切换：默认显示中文 */
+.lang-content.zh { display: block; }
+.lang-content.en { display: none; }
+#lang-en:checked ~ .container .lang-content.zh { display: none; }
+#lang-en:checked ~ .container .lang-content.en { display: block; }
+@media (max-width: 600px) {
+  .container { padding: 24px 18px 48px; }
+  h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<input type="radio" name="lang" id="lang-zh" checked>
+<input type="radio" name="lang" id="lang-en">
+
+<div class="container">
+  <header>
+    <div class="brand">耳边 · Earbian</div>
+    <div class="lang-toggle">
+      <label for="lang-zh">中文</label>
+      <label for="lang-en">English</label>
+    </div>
+  </header>
+
+  <!-- ==================== 中文 ==================== -->
+  <article class="lang-content zh">
+    <div class="eyebrow">个人信息保护</div>
+    <h2>隐私政策</h2>
+    <p class="meta">最后更新：2026 年 5 月 15 日 · 版本 v1.0</p>
+
+    <p class="summary">耳边重视并严格保护用户的个人信息。本政策说明我们收集哪些信息、如何使用，以及你对这些信息所拥有的权利。耳边的 AI 对话功能面向 17 岁及以上用户，未满 17 岁请立即停止使用。</p>
+
+    <h3>1. 我们收集的信息</h3>
+    <p>使用耳边时，我们仅收集为提供服务必需的最少信息：</p>
+    <ul>
+      <li><strong>账号基础信息</strong>：你注册时填写的昵称、登录方式（手机号 / 邮箱 / Apple ID）。</li>
+      <li><strong>使用数据</strong>：收听记录、片单偏好、AI 对话内容、举报与拉黑动作。</li>
+      <li><strong>本地偏好设置</strong>：AI 朗读开关、通知偏好、安静模式时段等仅存在你设备本地的设置。</li>
+      <li><strong>设备技术信息</strong>：iOS 版本、App 版本，用于崩溃诊断与功能兼容性判断。</li>
+    </ul>
+
+    <h3>2. 我们不收集的信息</h3>
+    <p>为减少隐私暴露面，下列信息我们<strong>从不收集</strong>：</p>
+    <ul>
+      <li>位置信息（GPS / 蓝牙 / Wi-Fi 地理定位）</li>
+      <li>通讯录、相册、相机、麦克风（除非你主动允许并使用对应功能）</li>
+      <li>剪贴板内容、短信、通话记录</li>
+      <li>跨 App 追踪标识符（IDFA / SKAdNetwork）</li>
+      <li>第三方账号好友关系链</li>
+    </ul>
+
+    <h3>3. 信息的使用方式</h3>
+    <p>已收集信息仅用于：</p>
+    <ul>
+      <li>保持登录状态、同步片单、展示收听历史</li>
+      <li>改进内容推荐算法（仅基于你自己的收听偏好，不与第三方共享）</li>
+      <li>AI 对话内容会传给第三方 AI 服务（Groq Inc.，美国）以实时生成回复；该服务承诺不留存对话内容超过 30 天</li>
+      <li>AI 朗读功能会传给第三方语音服务（ElevenLabs Ltd.，美国）以合成音频；同样不留存超过 30 天</li>
+      <li>维护社区秩序：举报核查时人工复核相关内容</li>
+    </ul>
+
+    <h3>4. 我们不做的事</h3>
+    <p>为保护用户隐私，下列行为我们<strong>明确承诺不做</strong>：</p>
+    <ul>
+      <li>不出售你的个人数据给任何第三方</li>
+      <li>不进行跨 App 用户追踪</li>
+      <li>不将你的对话内容用于训练第三方 AI 模型</li>
+      <li>不将未授权的数据共享给营销、广告或数据分析公司</li>
+      <li>不会未经你的明确同意访问通讯录、相册或位置</li>
+    </ul>
+
+    <h3>5. 数据存储位置与加密</h3>
+    <p>账号基础信息存储于你的设备本地（iOS Keychain + SharedPreferences）。AI 对话和朗读请求通过 HTTPS / TLS 1.3 加密传输到 Groq 和 ElevenLabs 在美国的服务器，并即时返回结果，不在我方服务器上留存。</p>
+
+    <h3>6. 内容安全与未成年人保护</h3>
+    <p>我们对色情、暴力、自残、伤害未成年人等内容采取<strong>零容忍</strong>策略：</p>
+    <ul>
+      <li>App 启动时强制 17+ 年龄确认浮层</li>
+      <li>AI 对话与 UGC 内容均配备敏感词预过滤</li>
+      <li>每条内容右上角举报入口，<strong>24 小时内</strong>人工复核</li>
+      <li>用户可对任何创作者执行拉黑屏蔽</li>
+      <li>核实违规账号将被警告、限制或永久封禁</li>
+    </ul>
+    <p>本服务<strong>不面向 14 岁以下儿童</strong>。如发现未成年人冒用账号，将立即注销并删除相关数据。</p>
+
+    <h3>7. 你的权利</h3>
+    <p>你随时可以：</p>
+    <ul>
+      <li><strong>访问与更正</strong>：在「账号与设置」中查看和修改账号信息</li>
+      <li><strong>删除数据</strong>：在「账号与设置」末尾点击"注销账号"，所有本地与服务端数据将被永久删除</li>
+      <li><strong>数据导出</strong>：发邮件至 zaspertech247@gmail.com 申请导出你的全部数据，我们在 14 个工作日内提供</li>
+      <li><strong>撤回授权</strong>：你可以在 iOS 系统设置中撤销对耳边的任何权限</li>
+      <li><strong>举报与投诉</strong>：通过应用内反馈或邮件提交，我们 7 个工作日内回复</li>
+    </ul>
+
+    <h3>8. 政策修改</h3>
+    <p>本政策可能根据法律法规与产品功能调整进行更新。<strong>重大变更</strong>会通过应用内显著通知 + 邮件双重提示，并提供至少 30 天的过渡期。继续使用即表示你接受更新后的政策。</p>
+
+    <h3>9. 联系我们</h3>
+    <p>如对本政策有任何疑问，或希望行使上述权利：</p>
+    <ul>
+      <li>邮件：<a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a></li>
+      <li>商务合作：<a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a></li>
+      <li>App 内：我的 → 账号与设置 → 帮助与反馈</li>
+    </ul>
+  </article>
+
+  <!-- ==================== English ==================== -->
+  <article class="lang-content en">
+    <div class="eyebrow">PRIVACY</div>
+    <h2>Privacy Policy</h2>
+    <p class="meta">Last updated: May 15, 2026 · Version 1.0</p>
+
+    <p class="summary">Earbian takes user privacy seriously. This policy explains what information we collect, how we use it, and your rights. Earbian's AI companion features are intended for users aged 17 and above. If you are under 17, please discontinue use.</p>
+
+    <h3>1. Information We Collect</h3>
+    <p>We collect only the minimum information necessary to provide our services:</p>
+    <ul>
+      <li><strong>Account basics</strong>: Nickname and login method (phone, email, or Apple ID) you provide at sign-up.</li>
+      <li><strong>Usage data</strong>: Listening history, playlist preferences, AI conversation content, report and block actions.</li>
+      <li><strong>Local preferences</strong>: TTS toggle, notification preferences, quiet mode hours — stored only on your device.</li>
+      <li><strong>Device technical info</strong>: iOS version, App version, used for crash diagnostics and compatibility.</li>
+    </ul>
+
+    <h3>2. Information We Do NOT Collect</h3>
+    <p>To minimize privacy exposure, we <strong>never</strong> collect:</p>
+    <ul>
+      <li>Location data (GPS / Bluetooth / Wi-Fi geolocation)</li>
+      <li>Contacts, photos, camera, or microphone (unless you actively grant permission for a specific feature)</li>
+      <li>Clipboard content, SMS, or call logs</li>
+      <li>Cross-App tracking identifiers (IDFA / SKAdNetwork)</li>
+      <li>Friend graphs from third-party accounts</li>
+    </ul>
+
+    <h3>3. How We Use Information</h3>
+    <p>Collected information is used solely for:</p>
+    <ul>
+      <li>Maintaining login state, syncing playlists, displaying listening history</li>
+      <li>Improving content recommendations (based on your own preferences only, never shared with third parties)</li>
+      <li>AI conversation content is sent to a third-party AI service (Groq Inc., USA) for real-time response generation; this service commits to retaining no conversation data beyond 30 days</li>
+      <li>AI TTS audio is generated by a third-party voice service (ElevenLabs Ltd., USA); same 30-day retention limit</li>
+      <li>Community moderation: human review of reported content</li>
+    </ul>
+
+    <h3>4. What We DON'T Do</h3>
+    <p>To protect user privacy, we explicitly commit to <strong>not</strong>:</p>
+    <ul>
+      <li>Sell your personal data to any third party</li>
+      <li>Perform cross-App user tracking</li>
+      <li>Use your conversations to train third-party AI models</li>
+      <li>Share unauthorized data with marketing, advertising, or analytics companies</li>
+      <li>Access contacts, photos, or location without your explicit consent</li>
+    </ul>
+
+    <h3>5. Data Storage Location and Encryption</h3>
+    <p>Account basics are stored locally on your device (iOS Keychain + SharedPreferences). AI conversation and TTS requests are transmitted over HTTPS / TLS 1.3 to Groq and ElevenLabs servers in the United States, returning results immediately. No data is retained on our servers.</p>
+
+    <h3>6. Content Safety and Minor Protection</h3>
+    <p>We have <strong>zero tolerance</strong> for pornography, violence, self-harm, and content harmful to minors:</p>
+    <ul>
+      <li>17+ age verification overlay on App launch</li>
+      <li>Sensitive content pre-filtering on both AI conversations and UGC</li>
+      <li>Report entry on every content piece with <strong>24-hour</strong> human review SLA</li>
+      <li>Users can block any creator</li>
+      <li>Verified violations result in warning, limitation, or permanent ban</li>
+    </ul>
+    <p>This service is <strong>not directed at children under 14</strong>. If we discover minor accounts, they will be immediately deleted along with associated data.</p>
+
+    <h3>7. Your Rights</h3>
+    <p>At any time you may:</p>
+    <ul>
+      <li><strong>Access and correct</strong>: View and modify account info under "Account &amp; Settings"</li>
+      <li><strong>Delete data</strong>: Tap "Delete Account" at the bottom of "Account &amp; Settings" — all local and server data will be permanently removed</li>
+      <li><strong>Data export</strong>: Email zaspertech247@gmail.com to request a data export; we'll provide within 14 business days</li>
+      <li><strong>Revoke permissions</strong>: You may revoke any Earbian permission via iOS Settings</li>
+      <li><strong>Report and complain</strong>: Submit via in-App feedback or email; we respond within 7 business days</li>
+    </ul>
+
+    <h3>8. Policy Updates</h3>
+    <p>This policy may be updated to reflect legal changes and product evolution. <strong>Material changes</strong> will be announced via in-App prominent notice plus email, with at least 30 days of transition time. Continued use signifies acceptance of the updated policy.</p>
+
+    <h3>9. Contact Us</h3>
+    <p>For questions about this policy or to exercise your rights:</p>
+    <ul>
+      <li>Email: <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a></li>
+      <li>Business: <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a></li>
+      <li>In-App: Me → Account &amp; Settings → Help &amp; Feedback</li>
+    </ul>
+  </article>
+
+  <footer>
+    <nav>
+      <a href="privacy.html">Privacy / 隐私政策</a>
+      <a href="terms.html">Terms / 用户协议</a>
+      <a href="community.html">Community / 社区准则</a>
+      <a href="support.html">Support / 帮助</a>
+      <a href="about.html">About / 关于</a>
+    </nav>
+    <p style="margin-top: 16px;">© 2026 Earbian · 耳边</p>
+  </footer>
+</div>
+
+</body>
+</html>
