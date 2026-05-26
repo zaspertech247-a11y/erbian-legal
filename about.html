@@ -1,144 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow">
-<title>关于耳边 · About Earbian</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.7; color: #1f1f2e; background: #faf7f2; -webkit-font-smoothing: antialiased; }
-.container { max-width: 760px; margin: 0 auto; padding: 32px 24px 64px; }
-header { margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee0d3; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-.brand { font-size: 20px; font-weight: 700; color: #4a2c82; letter-spacing: 0.5px; }
-.lang-toggle { display: flex; gap: 4px; background: #ede4d8; border-radius: 999px; padding: 4px; }
-.lang-toggle label { padding: 6px 14px; font-size: 13px; cursor: pointer; border-radius: 999px; transition: all 0.2s; color: #6b5e4b; }
-input[type=radio] { position: absolute; opacity: 0; pointer-events: none; }
-#lang-zh:checked ~ .container .lang-toggle label[for=lang-zh],
-#lang-en:checked ~ .container .lang-toggle label[for=lang-en] { background: #fff; color: #4a2c82; box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-weight: 600; }
-.eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; color: #4a2c82; background: #ede0fa; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; margin-bottom: 12px; }
-h2 { font-size: 32px; font-weight: 700; color: #2a1845; margin-bottom: 12px; line-height: 1.3; }
-h3 { font-size: 18px; font-weight: 700; color: #2a1845; margin-top: 28px; margin-bottom: 10px; }
-.summary { font-size: 16px; color: #5e5571; margin-bottom: 24px; padding: 16px; background: #fff; border-left: 3px solid #4a2c82; border-radius: 4px; }
-p { margin-bottom: 12px; color: #3a3548; }
-ul { margin-bottom: 16px; padding-left: 24px; }
-li { margin-bottom: 6px; color: #3a3548; }
-.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
-.feature { background: #fff; padding: 18px; border-radius: 10px; }
-.feature h4 { font-size: 15px; color: #4a2c82; margin-bottom: 6px; }
-.feature p { font-size: 14px; margin: 0; color: #5e5571; }
-.version-card { background: #ede0fa; padding: 16px; border-radius: 8px; margin-top: 16px; font-size: 14px; color: #4a2c82; }
-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee0d3; font-size: 13px; color: #8a8295; }
-footer a { color: #4a2c82; text-decoration: none; margin-right: 16px; }
-footer a:hover { text-decoration: underline; }
-.lang-content.zh { display: block; }
-.lang-content.en { display: none; }
-#lang-en:checked ~ .container .lang-content.zh { display: none; }
-#lang-en:checked ~ .container .lang-content.en { display: block; }
-@media (max-width: 600px) { .container { padding: 24px 18px 48px; } h2 { font-size: 28px; } }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>耳边 · 关于</title>
+  <style>
+    body { margin: 0; padding: 16px; background: #FFF5ED; color: #61463F; font: 14px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; }
+    .hero { background: #FFFCF8; border-radius: 16px; padding: 16px; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 14px; }
+    .eyebrow { color: #D97757; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; }
+    h1 { font-size: 17px; font-weight: 700; margin: 4px 0 10px; color: #61463F; }
+    .summary { color: #61463F; font-size: 14px; line-height: 1.7; }
+    section { background: #FFFCF8; border-radius: 16px; padding: 16px; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 10px; }
+    h2 { font-size: 15px; font-weight: 700; margin: 0 0 8px; color: #61463F; }
+    section p { color: #8C6A60; font-size: 14px; line-height: 1.75; margin: 0; }
+    a { color: #D97757; text-decoration: none; }
+    .legal-links { padding: 14px 4px; color: #8C6A60; font-size: 13px; }
+    .legal-links a { margin-right: 14px; }
+    .copyright { color: #B89C92; font-size: 12px; padding: 0 4px; }
+  </style>
 </head>
 <body>
-
-<input type="radio" name="lang" id="lang-zh" checked>
-<input type="radio" name="lang" id="lang-en">
-
-<div class="container">
-  <header>
-    <div class="brand">耳边 · Earbian</div>
-    <div class="lang-toggle">
-      <label for="lang-zh">中文</label>
-      <label for="lang-en">English</label>
-    </div>
-  </header>
-
-  <article class="lang-content zh">
+  <div class="hero">
     <div class="eyebrow">产品介绍</div>
-    <h2>关于耳边</h2>
+    <h1>关于耳边</h1>
+    <p class="summary">耳边是一款声音陪伴应用，为用户提供睡前、通勤与情绪调节等场景下的陪伴内容与 AI 对话。</p>
+  </div>
 
-    <p class="summary">耳边是一款声音陪伴应用，为用户提供睡前、通勤与情绪调节等场景下的陪伴内容与 AI 实时对话。</p>
+  <section>
+    <h2>产品特色</h2>
+    <p>精选温柔女声、治愈男声、元气女声等多种声线内容，覆盖睡前陪伴、早安叫醒、角色扮演、情景剧等场景。</p>
+  </section>
 
-    <h3>产品特色</h3>
-    <div class="feature-grid">
-      <div class="feature">
-        <h4>多元声线内容</h4>
-        <p>精选温柔女声、治愈男声、元气女声等多种声线，覆盖睡前陪伴、早安叫醒、角色扮演、情景剧等场景。</p>
-      </div>
-      <div class="feature">
-        <h4>AI 实时陪伴</h4>
-        <p>支持与不同角色进行实时语音陪伴对话，角色会记住偏好与会话内容，带来连续的陪伴体验。</p>
-      </div>
-      <div class="feature">
-        <h4>真人级朗读</h4>
-        <p>基于 ElevenLabs 真人级 AI 语音合成，5 个 AI 角色与 5 种场景调性各有独立声线。</p>
-      </div>
-      <div class="feature">
-        <h4>隐私优先</h4>
-        <p>不收集位置、通讯录、相册；对话数据本地存储为主；上架前完整公开隐私政策。</p>
-      </div>
-    </div>
+  <section>
+    <h2>真人级朗读</h2>
+    <p>基于 ElevenLabs 真人级 AI 语音合成，5 个 AI 角色与 5 种场景调性各有独立声线。</p>
+  </section>
 
-    <h3>商务合作</h3>
-    <p>若有商务合作、创作者入驻或品牌联合意向，可发送邮件至 <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a> 联系我们。</p>
+  <section>
+    <h2>AI 陪伴</h2>
+    <p>支持与不同角色进行实时陪伴对话，角色会记住你的偏好与会话内容，带来连续的陪伴体验。</p>
+  </section>
 
-    <h3>用户支持</h3>
+  <section>
+    <h2>隐私优先</h2>
+    <p>不收集位置、通讯录、相册；对话数据本地存储为主；上架前完整公开隐私政策。</p>
+  </section>
+
+  <section>
+    <h2>用户支持</h2>
     <p>遇到使用问题，请发送邮件至 <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a>，或查阅 <a href="support.html">帮助中心</a>。</p>
+  </section>
 
-    <div class="version-card">
-      <strong>版本</strong>：V1.0.0 测试版<br>
-      未接入 Apple 内购，所有公开内容免费收听。
-    </div>
-  </article>
+  <section>
+    <h2>版本</h2>
+    <p>V1.0.0</p>
+  </section>
 
-  <article class="lang-content en">
-    <div class="eyebrow">PRODUCT</div>
-    <h2>About Earbian</h2>
-
-    <p class="summary">Earbian is an audio companionship app providing bedtime, commute, and emotional regulation content along with real-time AI conversations.</p>
-
-    <h3>Features</h3>
-    <div class="feature-grid">
-      <div class="feature">
-        <h4>Diverse Voice Library</h4>
-        <p>Carefully curated gentle female, healing male, energetic female and more voice styles spanning bedtime companionship, morning wake-up, role-play, and scenario drama.</p>
-      </div>
-      <div class="feature">
-        <h4>Real-Time AI Companion</h4>
-        <p>Engage in real-time voice conversations with multiple characters. They remember your preferences and conversation context for continuous companionship.</p>
-      </div>
-      <div class="feature">
-        <h4>Human-Quality TTS</h4>
-        <p>Powered by ElevenLabs human-quality AI voice synthesis, with distinct voice profiles for 5 AI characters and 5 scene tones.</p>
-      </div>
-      <div class="feature">
-        <h4>Privacy First</h4>
-        <p>We don't collect location, contacts, or photos. Conversations are stored locally. Full privacy policy disclosure before submission.</p>
-      </div>
-    </div>
-
-    <h3>Business Inquiries</h3>
-    <p>For business partnerships, creator onboarding, or brand collaborations, email <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a>.</p>
-
-    <h3>User Support</h3>
-    <p>Encountered an issue? Email <a href="mailto:zaspertech247@gmail.com">zaspertech247@gmail.com</a> or visit the <a href="support.html">Help Center</a>.</p>
-
-    <div class="version-card">
-      <strong>Version</strong>: V1.0.0 Beta<br>
-      No Apple In-App Purchase. All public content is available at no cost.
-    </div>
-  </article>
-
-  <footer>
-    <nav>
-      <a href="privacy.html">Privacy / 隐私政策</a>
-      <a href="terms.html">Terms / 用户协议</a>
-      <a href="community.html">Community / 社区准则</a>
-      <a href="support.html">Support / 帮助</a>
-      <a href="about.html">About / 关于</a>
-    </nav>
-    <p style="margin-top: 16px;">© 2026 Earbian · 耳边</p>
-  </footer>
-</div>
-
+  <div class="legal-links">
+    <a href="privacy.html">Privacy / 隐私政策</a>
+    <a href="terms.html">Terms / 用户协议</a>
+    <a href="community.html">Community / 社区准则</a>
+    <a href="support.html">Support / 帮助</a>
+  </div>
+  <div class="copyright">© 2026 Erbian · 耳边</div>
 </body>
 </html>
